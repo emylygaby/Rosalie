@@ -1,0 +1,10 @@
+node_modules/
+.npm-cache/
+*.tsbuildinfo
+dist/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+*.local

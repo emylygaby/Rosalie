@@ -1,0 +1,89 @@
+/* Evolução 1.1: orçamento explícito, perfil e planejamento pessoal. */
+.profile-avatar-image { display: inline-grid; place-items: center; overflow: hidden; width: 38px; height: 38px; min-width: 38px; border-radius: 50%; background: #F8DFE7; color: #7D3654; font: 500 20px/1 var(--font-display); }
+.profile-avatar-image img, .profile-photo-preview > img { width: 100%; height: 100%; object-fit: cover; }
+.profile-photo-preview { width: 76px; height: 76px; border-radius: 50%; overflow: hidden; margin-bottom: 20px; }
+.profile-photo-preview .profile-avatar-image { width: 76px; height: 76px; font-size: 32px; margin: 0; }
+.header-avatar > .profile-avatar-image { width: 100%; height: 100%; min-width: 0; }
+.signup-privacy { font-size: 12px; line-height: 20px; color: #6E626C; margin-top: 16px; text-align: center; }
+.dashboard-page .current-income-source { color: #F8E8EE; font-size: 12px; line-height: 20px; margin: 8px 0 14px; }
+.dashboard-page .month-overview { order: 1; }
+.dashboard-page .metric-stack { order: 2; }
+.dashboard-forecast { grid-column: span 12; order: 3; }
+.dashboard-page .cards-panel { order: 4; }
+.dashboard-page .events-panel { order: 5; }
+.dashboard-page .planned-panel { order: 6; }
+.dashboard-page .dashboard-analysis { order: 7; }
+.budget-forecast { background: #FCF5F8; }
+.dashboard-page .budget-forecast { padding: 24px; border: 1px solid #EFDDE2; border-radius: 22px; background: #FCF5F8; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); column-gap: 40px; }
+.dashboard-page .budget-forecast > .eyebrow, .dashboard-page .budget-forecast > h2, .dashboard-page .forecast-result-label, .dashboard-page .forecast-result, .dashboard-page .forecast-status { grid-column: 1; }
+.forecast-result-label { display: block; font-size: 13px; color: #6E626C; margin-top: 14px; }
+.forecast-result { display: block; font-size: 32px; line-height: 44px; color: #286E56; font-weight: 600; font-variant-numeric: tabular-nums; }
+.forecast-result.shortfall { color: #9F3656; }
+.forecast-status, .budget-source { color: #6E626C; font-size: 12px; line-height: 21px; margin-top: 8px; }
+.forecast-formula { margin-top: 18px; }
+.forecast-formula > div { display: flex; justify-content: space-between; gap: 14px; padding: 10px 0; font-size: 12px; line-height: 20px; border-bottom: 1px solid #EFDDE2; }
+.forecast-formula strong { font-weight: 500; white-space: nowrap; }
+.dashboard-page .forecast-formula { grid-column: 2; grid-row: 1 / 7; margin-top: 0; align-self: center; }
+.dashboard-page .budget-source, .dashboard-page .budget-forecast > .text-link { grid-column: 1 / -1; }
+.income-plan-panel .section-description { margin-top: 10px; }
+.planner-tools { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; align-items: start; }
+.planner-note-panel { grid-column: 1 / -1; }
+.planner-task-list { margin-top: 20px; }
+.planner-task { display: flex; align-items: center; gap: 10px; padding: 14px 0; border-bottom: 1px solid #F0E4EA; }
+.planner-task > div { flex: 1; min-width: 0; }
+.planner-task strong { display: block; font-size: 14px; overflow-wrap: anywhere; font-weight: 500; }
+.planner-task small { display: block; font-size: 12px; line-height: 20px; color: #6E626C; }
+.planner-task.completed strong { text-decoration: line-through; color: #6E626C; }
+.planner-task .icon-btn { width: 44px; min-width: 44px; }
+.habit-row { margin-top: 20px; border-top: 1px solid #EFDDE2; padding-top: 10px; }
+.habit-title { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.habit-title strong { font-size: 14px; font-weight: 500; overflow-wrap: anywhere; }
+.habit-days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 5px; margin: 8px 0; }
+.habit-days button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-height: 56px; border: 1px solid #EFDDE2; border-radius: 10px; color: #7D3654; }
+.habit-days button.checked { background: #F8DFE7; border-color: #B86C87; }
+.habit-days button > span { font-size: 11px; }
+.habit-days button > small { font-size: 12px; }
+.habit-row > small { font-size: 12px; }
+.cycle-panel { margin-top: 24px; }
+.cycle-panel .section-heading { align-items: flex-start; }
+.cycle-panel h2 { display: flex; align-items: center; gap: 8px; }
+.cycle-panel .section-description { margin-top: 12px; }
+.cycle-privacy { padding: 16px; background: #F7EFF5; border-radius: 12px; color: #6E626C; font-size: 13px; line-height: 22px; margin-bottom: 20px; }
+.cycle-consent { background: #F8EDF2; padding: 14px; border-radius: 12px; margin-top: 18px; align-items: flex-start; line-height: 22px; }
+.cycle-consent input { margin-top: 3px; }
+.cycle-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 20px 0; }
+.cycle-summary > div { padding: 14px; border: 1px solid #EFDDE2; border-radius: 12px; background: #FFFAFC; }
+.cycle-summary span { display: block; color: #6E626C; font-size: 12px; line-height: 20px; }
+.cycle-summary strong { font-size: 14px; line-height: 22px; display: block; font-weight: 500; margin-top: 5px; }
+.cycle-selected { font-size: 13px; line-height: 22px; background: #F5EDF7; padding: 12px; border-radius: 12px; margin: 16px 0; }
+.cycle-history { margin-top: 24px; }
+.cycle-history .simple-row { flex-wrap: wrap; }
+.cycle-history .simple-row > div { min-width: 180px; }
+.cycle-limit { font-size: 12px; line-height: 21px; color: #6E626C; border-top: 1px solid #EFDDE2; padding-top: 18px; margin-top: 24px; }
+.cycle-limit a { text-decoration: underline; color: #7D3654; text-underline-offset: 3px; }
+.cycle-legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.cycle-legend > span { font-size: 10px; line-height: 18px; padding: 5px 8px; border-radius: 6px; }
+.cycle-recorded { background: #F8DFE7; box-shadow: inset 0 -3px #B86C87; }
+.cycle-period-estimate { background: #FFF1F6; box-shadow: inset 0 -3px #D5A1B7; }
+.cycle-ovulation-estimate { background: #EEE5F6; box-shadow: inset 0 -3px #9B7CB9; }
+.cycle-pms-estimate { background: #F6EDDF; box-shadow: inset 0 -3px #B59363; }
+.cycle-day-mark { display: block; height: 4px; width: 12px; border-radius: 5px; background: #7D3654; }
+@media (max-width: 767px) {
+  .topbar .header-avatar { display: grid; width: 36px; min-width: 36px; height: 36px; }
+  .topbar .topbar-actions { gap: 8px; }
+  .dashboard-page .budget-forecast { display: block; padding: 20px; }
+  .dashboard-page .forecast-formula { margin-top: 18px; }
+  .dashboard-page .current-income-source { font-size: 11px; line-height: 19px; }
+  .forecast-result { font-size: 30px; }
+  .planner-tools { grid-template-columns: 1fr; gap: 20px; }
+  .planner-note-panel { grid-column: 1; }
+  .planner-task { gap: 7px; flex-wrap: wrap; }
+  .planner-task > div { min-width: 145px; }
+  .cycle-panel .section-heading { flex-direction: column; gap: 8px; }
+  .cycle-summary { grid-template-columns: 1fr; }
+  .cycle-panel .form-grid { grid-template-columns: 1fr; gap: 0; }
+  .cycle-panel .form-actions { flex-wrap: wrap; }
+  .income-plan-panel .form-actions, .planner-note-panel .form-actions { flex-wrap: wrap; }
+  .income-plan-panel .form-actions .saved, .planner-note-panel .form-actions .saved, .cycle-panel .form-actions .saved { display: flex; flex-basis: 100%; margin: 0 0 8px; }
+  .habit-days { gap: 3px; }
+}

@@ -1,0 +1,19 @@
+.privacy-page { max-width: 900px; margin: auto; padding: 32px 20px 64px; }
+.privacy-page > .brand { margin-bottom: 28px; display: inline-flex; }
+.privacy-notice { padding: clamp(22px, 5vw, 48px); }
+.privacy-notice h1 { font-size: clamp(26px, 6vw, 38px); margin-bottom: 12px; }
+.privacy-notice h2 { margin: 30px 0 12px; }
+.privacy-notice p, .privacy-center p, .vault-gate p { line-height: 1.75; }
+.privacy-notice a, .privacy-center a { color: var(--primary, #803852); overflow-wrap: anywhere; }
+.privacy-actions, .vault-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+.privacy-center { min-width: 0; }
+.privacy-files { list-style: none; padding: 0; max-height: 320px; overflow: auto; }
+.privacy-files li { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f0dbe3; }
+.privacy-files span { min-width: 0; overflow-wrap: anywhere; font-size: 12px; }
+.delete-account-form { margin-top: 20px; padding-top: 20px; border-top: 1px solid #f0dbe3; }
+.auth-privacy-link { text-align: center; font-size: 11px; margin: 18px 0 0; }
+.vault-gate form { max-width: 580px; }
+.vault-gate .field { margin-top: 16px; }
+.vault-gate .btn { margin-top: 14px; }
+.vault-actions .btn, .privacy-actions .btn { white-space: normal; }
+@media (max-width: 600px) { .privacy-actions, .vault-actions { flex-direction: column; } .privacy-files .btn { width: 100%; } }
